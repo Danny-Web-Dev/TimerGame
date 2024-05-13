@@ -16,9 +16,7 @@ const TimerChallange = ({ title, targetTime }) => {
 
 	const handleStart = () => {
 		timer.current = setInterval(() => {
-			setTimeRemaining((prevTimeRemaining) => {
-				return prevTimeRemaining - 10;
-			});
+			setTimeRemaining((prevTimeRemaining) => prevTimeRemaining - 10);
 		}, 10);
 	};
 
